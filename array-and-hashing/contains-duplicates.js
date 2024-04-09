@@ -1,4 +1,4 @@
-const assert = require("./assert")
+const assert = require("../assert")
 
 /**
  * @param {number[]} nums
