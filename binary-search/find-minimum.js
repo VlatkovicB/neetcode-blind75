@@ -2,7 +2,6 @@ const assert = require("../assert")
 
 /**
  * @param {number[]} nums
- * Time O(log(N)) | Space O(1)
  * @return {number}
  */
 var findMin = function (nums) {
