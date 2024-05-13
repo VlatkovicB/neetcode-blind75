@@ -26,38 +26,4 @@ var reverseList = function (head) {
   return previous
 }
 
-class Node {
-  value
-  next
-
-  /**
-   * @param {number} value
-   * @param {Node} [next=null]
-   */
-  constructor(value, next = null) {
-    this.value = value
-    this.next = next
-  }
-
-  /**
-   * @param {Node} node
-   */
-  set next(node) {
-    this.next = node
-  }
-}
-
-const constructHead = (list = []) => {
-  list.reverse()
-  const head = new Node(list.pop())
-  let current = head
-
-  while (list.length) {
-    current.next = new Node(list.pop())
-    current = current.next
-  }
-
-  return head
-}
-
 // assert(reverseList(constructHead([1, 2, 3, 4, 5])), [5, 4, 3, 2, 1])
